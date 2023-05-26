@@ -1,9 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
-
-
 let rooms = []
 let bookingDetails = []
 let customerDetails = []
@@ -154,11 +151,6 @@ router.get("/customerbookings/:customerName", (req, res) => {
 
   res.status(200).json(response);
 });
-
-// Add the above code after the "/showcustomers" route
-
-
-
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
